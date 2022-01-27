@@ -1,41 +1,37 @@
-<style>
+body {
+  background-color: gainsboro;
+}
 
-  body {
-    font-size: 16px;
-  }
+h1 {
+  font-size: 50px;
+  color: orange;
+  font-family: sans-serif;
+}
 
-  h1 {
-    font-size: 50px;
-    color: orange;
-    font-family: sans-serif;
-  }
+p {
+  font-weight: 600;
+  font-size: 3em;
+  font-style: italic;
+  line-height: 20px;
+  text-decoration-color: indigo;
+}
 
-  p {
-    font-weight: 600;
-    font-size: 3em;
-    font-style: italic;
-    line-height: 20px;
-    text-decoration-color: indigo;
-  }
+#lists {
+  background-color: rgb(227, 228, 208);
+}
 
-  #lists {
-    background-color: rgb(227, 228, 208);
-  }
+.fundo {
+  background-color: grey;
+}
 
-  .fundo {
-    background-color: grey;
-  }
+#amarelo {
+  color: yellow;
+}
 
-  #amarelo {
-    color: yellow;
-  }
+#marrom {
+  color: brown;
+}
 
-  #marrom {
-    color: brown;
-  }
-
-  #vermelho {
-    color: red;
-  }
-
-</style>
+#vermelho {
+  color: red;
+}
