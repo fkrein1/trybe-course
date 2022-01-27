@@ -1,0 +1,41 @@
+<style>
+
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 50px;
+    color: orange;
+    font-family: sans-serif;
+  }
+
+  p {
+    font-weight: 600;
+    font-size: 3em;
+    font-style: italic;
+    line-height: 20px;
+    text-decoration-color: indigo;
+  }
+
+  #lists {
+    background-color: rgb(227, 228, 208);
+  }
+
+  .fundo {
+    background-color: grey;
+  }
+
+  #amarelo {
+    color: yellow;
+  }
+
+  #marrom {
+    color: brown;
+  }
+
+  #vermelho {
+    color: red;
+  }
+
+</style>
