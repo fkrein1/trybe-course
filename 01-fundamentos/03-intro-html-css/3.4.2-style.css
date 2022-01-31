@@ -1,0 +1,10 @@
+aside {
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
+}
+
+article{
+  display: inline-block;
+  width: 45%;
+}
