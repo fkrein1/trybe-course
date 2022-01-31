@@ -1,0 +1,56 @@
+ol li {
+    background-color: yellow;
+}
+
+ol li:nth-of-type(even) {
+  color: green;
+}
+
+ol li:nth-of-type(odd) {
+  text-transform: uppercase;
+}
+
+h1, h2, h3  {
+  color: red;
+}
+
+h1 em, h2 em, h3 em {
+  font-size:40px;
+  border: 1px solid black;
+}
+
+ol li, ul li {
+  font-size: 20px;
+}
+
+ol li em, ul li em {
+  font-weight: bold;
+}
+
+ul:nth-of-type(1) li:nth-of-type(1), ul:nth-of-type(1) li:nth-of-type(2), ul:nth-of-type(1) li:nth-of-type(3) {
+  color: blue;
+}
+
+ul:nth-of-type(1) li:nth-of-type(2), ul:nth-of-type(1) li:nth-of-type(3) {
+  background-color: pink;
+}
+
+ul:nth-of-type(2) a[href*="stackoverflow"]  {
+  background-color: orange;
+}
+
+ul:nth-of-type(2) a[href*="w3"]  {
+  background-color: green;
+}
+
+ul:nth-of-type(2) a[href*="mozilla"]  {
+  background-color: black;
+}
+
+ul:nth-of-type(2) a[href*="devdocs"]  {
+  background-color: yellow;
+}
+
+ul:nth-of-type(2) a[href*="trybe"]  {
+  background-color: green;
+}
