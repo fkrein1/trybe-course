@@ -117,13 +117,41 @@ if (a % 2 != 0 || b % 2 != 0 || c % 2 != 0){
 // 10) Escreva um programa que se inicie com dois valores em duas constantes diferentes: o custo de um produto e seu valor de venda. A partir dos valores, calcule quanto de lucro (valor de venda descontado o custo do produto) a empresa terá ao vender mil desses produtos.
 let valorCusto = 200
 let valorVenda = 400
-let impostoCusto = 0.2 * valorCusto
+let imposto = 0.2 * valorCusto
 
 if (valorCusto <0 || valorVenda < 0){
   console.log("erro")
 } else {
-  let lucro = valorVenda - valorCusto - impostoCusto
+  let lucro = valorVenda - valorCusto - imposto
   console.log(lucro * 1000)
 }
 
 // 11) Uma pessoa que trabalha de carteira assinada no Brasil tem descontados de seu salário bruto o INSS e o IR. Faça um programa que, dado um salário bruto, calcule o líquido a ser recebido.
+
+let salario = 1000
+let inss = 0
+let ir = 0
+
+if (salario <= 1556.94) {
+  inss = 0.08 * salario
+} else if (salario >= 1556.95 && salario <= 2594.92) {
+  inss = 0.09 * salario
+} else if (salario >= 2594.93 && salario <= 5189.82) {
+  inss = 0.11 * salario
+} else {
+  inss = 570.88
+}
+
+let salarioLiquido = salario - inss
+
+if (salarioLiquido >= 1903.99 && salarioLiquido <= 2826.65) {
+  ir = 0.075 * salarioLiquido - 142.80
+} else if (salarioLiquido >= 2826.66 && salarioLiquido <= 3751.05) {
+  ir = 0.15 * salarioLiquido - 354.80
+} else if (salarioLiquido >= 3751.06 && salarioLiquido <= 4664.68) {
+  ir = 0.225 * salarioLiquido - 636.13
+} else if (salarioLiquido > 4664.68) {
+  ir = 0.275 * salarioLiquido - 869.36
+} 
+
+console.log( salarioLiquido - ir)
