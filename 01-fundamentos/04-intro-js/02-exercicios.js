@@ -26,6 +26,7 @@ console.log(mediaAritmetica)
 
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27]
 let total = 0
+
 for (let number of numbers){
   total = number + total
 }
@@ -89,3 +90,51 @@ for (let number of numbers) {
   numbersDividido.push(number / 2)
 }
 console.log(numbersDividido)
+
+// 10 - Ordene o array numbers em ordem crescente e imprima seus valores;
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let size = numbers.length
+
+for (let index = 0; index < size ; index += 1){
+  for (let index2 = 0; index2 < size; index2 += 1){
+    if(numbers[index] < numbers[index2]){
+      let num = numbers[index]
+      numbers[index] = numbers[index2]
+      numbers[index2] = num
+    }
+  }
+}
+
+console.log(numbers);
+
+// 11 - Ordene o array numbers em ordem decrescente e imprima seus valores;
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let size = numbers.length
+
+for (let index = 0; index < size ; index += 1){
+  for (let index2 = 0; index2 < size; index2 += 1){
+    if(numbers[index] > numbers[index2]){
+      let num = numbers[index]
+      numbers[index] = numbers[index2]
+      numbers[index2] = num
+    }
+  }
+}
+
+console.log(numbers);
+
+// 12 Agora crie um novo array a partir do array numbers , sem perdê-lo. Cada valor do novo array deverá ser igual ao valor correspondente no array numbers multiplicado pelo seguinte. Por exemplo: o primeiro valor do novo array deverá ser 45, pois é a multiplicação de 5 (primeiro valor) e 9 (valor seguinte). Já o segundo valor do novo array deverá ser 27, pois é a multiplicação de 9 (segundo valor) e 3 (valor seguinte), e assim por diante. Caso não haja próximo valor, a multiplicação deverá ser feita por 2.
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let newArray = []
+
+for (let index = 0; index < numbers.length; index += 1){
+  let multiplo = numbers[index] * numbers[index + 1]
+  if (numbers[index + 1] == undefined){
+    multiplo = numbers[index] * 2
+  }
+  newArray.push(multiplo)
+}
+console.log(newArray)
