@@ -85,7 +85,7 @@ function square(n){
   }
 }
 
-square(3)
+square(5)
 
 // 2- Para o segundo exercício, faça o mesmo que antes, mas que imprima um triângulo retângulo com 5 asteriscos de base. Por exemplo:
 
@@ -131,7 +131,7 @@ function perfectTriangle(n){
   }
 }
 
-perfectTriangle(9)
+perfectTriangle(8)
 
 // 5- Faça uma pirâmide com n asteriscos de base que seja vazia no meio. Assuma que o valor de n será sempre ímpar:
 
@@ -154,7 +154,7 @@ function emptyTriangle(n){
   console.log("*".repeat(n))
 }
 
-emptyTriangle(39)
+emptyTriangle(55)
 
 /* 6- Faça um programa que diz se um número definido numa variável é primo ou não.
 Um número primo é um número que só é divisível por 1 e por ele mesmo, ou seja, a divisão dele com quaisquer outros números dá resto diferente de zero.
