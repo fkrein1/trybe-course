@@ -149,12 +149,13 @@ function emptyTriangle(n){
                 "*".repeat(1) + 
                 " ".repeat(middle) +
                 "*".repeat(1) +
-                " ".repeat(right))
+                " ".repeat(right)
+                )
   }
   console.log("*".repeat(n))
 }
 
-emptyTriangle(55)
+emptyTriangle(13)
 
 /* 6- Faça um programa que diz se um número definido numa variável é primo ou não.
 Um número primo é um número que só é divisível por 1 e por ele mesmo, ou seja, a divisão dele com quaisquer outros números dá resto diferente de zero.
@@ -174,3 +175,47 @@ function isPrimeNumber(number){
 }
 
 console.log(isPrimeNumber(12))
+
+// 5- Faça uma pirâmide com n asteriscos de base que seja vazia no meio. Assuma que o valor de n será sempre ímpar:
+
+// usando dois loops
+
+function triangleEmpty(n){
+  let middle = (n + 1) / 2
+  let left = middle
+  let right = middle
+  let asterisco = "*"
+  let vazio = " "
+  for(let line = 0; line <= middle; line += 1){
+    let colOutput = ""
+    for(let col = 0; col <= n+1 ; col += 1){
+      if(line === middle || col === left || col == right){
+        colOutput += asterisco
+      } else{
+        colOutput += vazio
+      }
+    }
+    console.log(colOutput)
+    left -= 1
+    right += 1
+  }
+}
+
+triangleEmpty(15)
+
+// 1- Agora vamos trabalhar com algumas formas geométricas! Faça um programa que, dado um valor n qualquer, seja n > 1 , imprima na tela um quadrado feito de asteriscos de lado de tamanho n . Por exemplo:
+
+function newSquare(n){
+  let asterisco = "*"
+  for (let line = 0; line < n; line +=1) {
+    let colOutput = ""
+    for(let col = 0; col < n; col +=1) {
+      colOutput += asterisco
+    }
+    console.log(colOutput)
+  }
+}
+
+newSquare(5)
+
+// 2 - Para o segundo exercício, faça o mesmo que antes, mas que imprima um triângulo retângulo com 5 asteriscos de base. Por exemplo:
