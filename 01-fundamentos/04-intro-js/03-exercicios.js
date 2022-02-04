@@ -219,3 +219,72 @@ function newSquare(n){
 newSquare(5)
 
 // 2 - Para o segundo exercício, faça o mesmo que antes, mas que imprima um triângulo retângulo com 5 asteriscos de base. Por exemplo:
+
+function newTriangle(n){
+  let asterisco = "*"
+  let vazio = " "
+  let contador = 0
+  for (let line = 0; line < n; line +=1) {
+    let colOutput = ""
+    for(let col = 0; col < n; col +=1) {
+      if(contador >= col){
+        colOutput += asterisco
+      } else{
+        colOutput += vazio
+      }
+    }
+    console.log(colOutput)
+    contador +=1
+  }
+}
+
+newTriangle(7)
+
+
+// 3 - Agora inverta o lado do triângulo. Por exemplo:
+
+function newInverseTriangle(n){
+  let asterisco = "*"
+  let vazio = " "
+  let contador = n -1
+  for (let line = 0; line < n; line +=1) {
+    let colOutput = ""
+    for(let col = 0; col < n; col +=1) {
+      if(contador <= col){
+        colOutput += asterisco
+      } else{
+        colOutput += vazio
+      }
+    }
+    console.log(colOutput)
+    contador -=1
+  }
+}
+
+newInverseTriangle(10)
+
+// 4 - Por fim, faça uma pirâmide com n asteriscos de base:
+
+function newPerfectTriangle(n){
+  let asterisco = "*"
+  let vazio = " "
+  let middle = (n + 1) / 2
+  let left = middle
+  let right = middle
+
+  for (let line = 0; line < middle; line +=1) {
+    let colOutput = ""
+    for(let col = 0; col < n + 1; col +=1) {
+      if(col <= right && col >= left){
+        colOutput += asterisco
+      } else{
+        colOutput += vazio
+      }
+    }
+    console.log(colOutput)
+    left -=1
+    right +=1
+  }
+}
+
+newPerfectTriangle(21)
