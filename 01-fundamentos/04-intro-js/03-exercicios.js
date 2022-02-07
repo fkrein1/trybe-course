@@ -8,7 +8,7 @@ function fatorial(n) {
   console.log(multi)
 }
 
-fatorial(10)
+fatorial(4)
 
 // 2- Agora, desenvolva um algoritmo que é capaz de inverter uma palavra. Por exemplo, a palavra "banana" seria invertida para "ananab". Utilize a string abaixo como exemplo, depois troque por outras para verificar se seu algoritmo está funcionando corretamente.
 
@@ -75,7 +75,7 @@ function biggestPrime(topNumber){
   console.log(prime)
 }
 
-biggestPrime(210)
+biggestPrime(5000)
 
 // 1- Agora vamos trabalhar com algumas formas geométricas! Faça um programa que, dado um valor n qualquer, seja n > 1 , imprima na tela um quadrado feito de asteriscos de lado de tamanho n . Por exemplo:
 
@@ -131,7 +131,7 @@ function perfectTriangle(n){
   }
 }
 
-perfectTriangle(8)
+perfectTriangle(51)
 
 // 5- Faça uma pirâmide com n asteriscos de base que seja vazia no meio. Assuma que o valor de n será sempre ímpar:
 
@@ -155,7 +155,7 @@ function emptyTriangle(n){
   console.log("*".repeat(n))
 }
 
-emptyTriangle(13)
+emptyTriangle(19)
 
 /* 6- Faça um programa que diz se um número definido numa variável é primo ou não.
 Um número primo é um número que só é divisível por 1 e por ele mesmo, ou seja, a divisão dele com quaisquer outros números dá resto diferente de zero.
