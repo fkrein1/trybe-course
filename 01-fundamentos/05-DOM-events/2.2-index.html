@@ -27,7 +27,15 @@ document.querySelector("#pai").appendChild(irmao).innerText = "irmao"
 document.querySelector("#elementoOndeVoceEsta").appendChild(filho1).innerText = "filho 1"
 document.querySelector("#primeiroFilho").appendChild(filho2).innerText = "filho 2"
 
-console.log(document.querySelector("#primeiroFilho section").parentElement.nextElementSibling.nextElementSibling)
+console.log(document.querySelector("#primeiroFilho section").parentElement.nextElementSibling)
+
+filho2.className = "teste"
+
+// Remova todos os elementos filhos de paiDoPai exceto pai , elementoOndeVoceEsta e primeiroFilhoDoFilho .
+
+let paiDoPai = document.querySelector("#paiDoPai")
+paiDoPai.firstElementChild.firstElementChild.nextElementSibling.nextElementSibling()
+
 
 </script>
 </html>
