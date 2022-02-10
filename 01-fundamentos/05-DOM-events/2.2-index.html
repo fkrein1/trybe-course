@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<main id="paiDoPai">
+  <section id="pai">
+    <section id="primeiroFilho"></section>
+    <section id="elementoOndeVoceEsta">
+      <section id="primeiroFilhoDoFilho"></section>
+      <section id="segundoEUltimoFilhoDoFilho"></section>
+    </section>
+    Atenção!
+    <section id="terceiroFilho"></section>
+    <section id="quartoEUltimoFilho"></section>
+  </section>
+</main>
+<script>
+/*E a prática? Aqui!
+Crie um irmão para elementoOndeVoceEsta .
+Crie um filho para elementoOndeVoceEsta .
+Crie um filho para primeiroFilhoDoFilho .
+A partir desse filho criado, acesse terceiroFilho .*/
+
+let irmao = document.createElement("section")
+let filho1 = document.createElement("section")
+let filho2 = document.createElement("section")
+
+document.querySelector("#pai").appendChild(irmao).innerText = "irmao"
+document.querySelector("#elementoOndeVoceEsta").appendChild(filho1).innerText = "filho 1"
+document.querySelector("#primeiroFilho").appendChild(filho2).innerText = "filho 2"
+
+console.log(document.querySelector("#primeiroFilho section").parentElement.nextElementSibling.nextElementSibling)
+
+</script>
+</html>
