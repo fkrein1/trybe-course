@@ -48,7 +48,7 @@ function redirectLinkedin(){
 myWebpage.addEventListener("mouseover", changeBlue)
 
 function changeBlue(element){
-  element.target.style.color = "blue"    
+  element.target.style.color = "#2fc18c"    
 }
 
 myWebpage.addEventListener("mouseleave", changeWhite)
@@ -67,7 +67,7 @@ function resetText(event) {
   // que retorna o objeto que disparou o evento.
 }
 
-firstLi.addEventListener('dblclick', resetText);
+firstLi.addEventListener('', resetText);
 
 // Não precisa passar o parâmetro dentro da callback resetText. O próprio
 // navegador fará esse trabalho por você, não é legal? Desse jeito, o
