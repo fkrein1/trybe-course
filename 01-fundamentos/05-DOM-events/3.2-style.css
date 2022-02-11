@@ -153,3 +153,11 @@ label {
   margin: 0px;
   padding: 10px 0;
 }
+
+.task {
+  opacity: 25%;
+}
+
+.task-selected {
+  opacity: 100%;
+}
