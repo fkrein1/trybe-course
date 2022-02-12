@@ -58,11 +58,12 @@ document.querySelector("#btn-holiday").addEventListener("click", function(){
 )
 
 function changeColor(className, cor){
-  let holiday = document.querySelectorAll(className)
-  for (let day of holiday){
-    if(day.style.background != cor){
-      day.style.background = cor
-    } else {day.style.background = "rgb(238,238,238)"
+  let element = document.querySelectorAll(className)
+  let elementColor = element[0].style.background
+  for (let item of element){
+    if(elementColor != cor){
+      item.style.background = cor
+    } else {item.style.background = "rgb(238,238,238)"
     }
   }
 }
