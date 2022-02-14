@@ -146,3 +146,26 @@ function taskColor(event){
     event.target.style.color = color
   }
 }
+
+// Vamos adicionar compromissos ao seu calendário? Implemente uma função que, ao digitar um compromisso na caixa de texto "COMPROMISSOS", adiciona o item à lista "MEUS COMPROMISSOS" ao clicar no botão "ADICIONAR".
+
+document.querySelector("#btn-add").addEventListener("click", addAppointment)
+document.querySelector("#task-input").addEventListener("keypress", function(){
+  if (event.key == "Enter"){
+    addAppointment()  
+  }
+})
+
+
+function addAppointment() {
+  let inputAppointment = document.querySelector("#task-input").value
+    if (inputAppointment.length == 0) {
+      alert("Erro: compromisso vazio")
+    } else{
+      let appointment = document.createElement("li")
+      appointment.innerText = inputAppointment
+      document.querySelector(".input-container").appendChild(appointment)
+      inputAppointment = " "
+    }
+  
+} 
