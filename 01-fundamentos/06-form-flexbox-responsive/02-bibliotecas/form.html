@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Form</title>
+</head>
+<body>
+  <form action="" method="GET">
+    <label class="block" for="name">Nome:
+      <input type="text" id="name" minlength="10" maxlength="40"></label>
+    <label class="block" for="email">Email:
+      <input type="email" id="email" minlength="10" maxlength="50"></label>
+   
+    <label for="cidade">
+      <input type="radio" name="destino" id="cidade">Cidade</label>
+    <label for="campo">
+      <input type="radio" name="destino" id="campo">Campo</label>
+    <label for="praia">
+      <input type="radio" name="destino" id="praia">Praia</label>
+    <label for="montanha">
+      <input type="radio" name="destino" id="montanha">Montanha</label>
+
+    <h3>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</h3>
+    <textarea class="block" name="" id="" cols="60" rows="10" maxlength="500"></textarea>
+    <label class="block" for="date">Data:<input type="date" id="date"></label>
+    <label class="block" for="noticias">Gostaria de receber outras incríveis oferecidas pela TrybeTrip?
+      <input type="checkbox" id="noticias" value="sim">Sim</label>
+    <label class="block" for="fotos">Concordo que imagens das minhas férias poderão ser usadas?
+    <input type="checkbox" id="fotos" value="sim">Sim</label>
+    <button type="submit" id="btn-submit">Enviar</button>
+  </form>
+<script src="script.js"></script>
+</body>
+</html>
