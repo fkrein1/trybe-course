@@ -4,4 +4,4 @@ function preventAction(event) {
   event.preventDefault()
 }
 
-btnSubmit.addEventListener("click", preventAction)
+// btnSubmit.addEventListener("click", preventAction)
