@@ -1,7 +1,10 @@
-const btnSubmit = document.querySelector("#btn-submit")
+const btnSubmit = document.querySelector('#btn-submit');
+const date = document.querySelector('#date');
 
-function preventAction(event) {
-  event.preventDefault()
-}
+var picker = new Pikaday({ field: document.getElementById('datepicker') });
 
-// btnSubmit.addEventListener("click", preventAction)
+// function prevent(event) {
+//   event.preventDefault();
+// }
+
+// btnSubmit.addEventListener("click", prevent)
