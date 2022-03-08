@@ -17,7 +17,7 @@ describe("a função verifyCredentials()", () => {
     const { userName, password } = user;
 
     expect(verifyCredentials({ userName, password })).toBe(
-      "Hello, Joana! Que bom ter você de volta"
+      "Pessoa usuária 'Bob' não encontrada, tente novamente!"
     ); 
   });
 

@@ -1,4 +1,9 @@
-// sum.js
-const sum = (a, b) => a + b;
+function sum(a, b) {
+  if (typeof a !== 'number' || typeof b !== 'number') {
+    throw new Error('parameters must be numbers');
+  }
 
-module.exports = sum;
+  return a + b;
+}
+
+module.exports = sum
