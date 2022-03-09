@@ -1,11 +1,12 @@
+//Não entendi como funciona esse exemplo aqui
 // Exemplo 1
 
 const sumFixAmount = (amount) => {
   return (number) => amount + number;
 }
 
-const initialSum = sumFixAmount(0)
-console.log(initialSum(50));
+const initialSum = sumFixAmount(4)
+console.log(initialSum(16));
 
 // Exemplo 2
 
