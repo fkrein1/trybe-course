@@ -1,0 +1,22 @@
+section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+h1 {
+  text-align: center;
+  font-family: monospace;
+}
+
+div {
+  font-family: monospace;
+  padding: 1%;
+  width: 250px;
+  margin: 1% 2%;
+  border: dashed 1px grey;
+  text-align: center;
+  font-size: 16px;
+  font-weight:400;
+  background-color: rgb(202, 202, 247);
+}
