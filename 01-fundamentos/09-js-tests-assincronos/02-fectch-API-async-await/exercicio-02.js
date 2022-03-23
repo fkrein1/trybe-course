@@ -25,7 +25,7 @@ const fetchCoins = () => {
   const coinData = fetch(API_URL)
     .then((response) => response.json())
     .then((data) => data.data)
-
+    .catch((error) => console.log(`Algo deu errado :( \n${error}`));
   return coinData
 }
 
