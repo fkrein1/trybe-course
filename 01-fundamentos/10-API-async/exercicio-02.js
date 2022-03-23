@@ -7,12 +7,13 @@
 //   fetch(API_URL)
 //     .then((response) => response.json())
 //     .then((data) => {
-//       data.data.forEach(({ name, symbol, priceUsd }, index) => {
+//       data.data.forEach(({ name, symbol, priceUsd, marketCapUsd}, index) => {
 //         if (index < 10) {
-//           let li = document.createElement('li')
-//           let ul = document.querySelector('#coins')
-//           li.innerText = `${name} (${symbol}): ${Number(priceUsd).toFixed(2)}`
-//           ul.appendChild(li)
+//           let div = document.createElement('div');
+//           let section = document.querySelector('#coins');
+//           div.innerHTML = `${index+1}: ${name} (${symbol})<br>Price: USD ${Number(priceUsd).toFixed(2)}<br> Market Cap: USD ${(Number(marketCapUsd)/ 1000000000).toFixed(2)} bi`;
+//           div.className = "coins"
+//           section.appendChild(div);
 //         }
 //       })  
 //     })
