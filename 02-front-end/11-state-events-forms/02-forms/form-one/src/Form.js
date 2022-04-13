@@ -9,7 +9,7 @@ class Form extends React.Component {
       favorite: '',
       france: 'false'
     }
-  }``
+  }
 
   handleChange = ({ target }) => {
     const { name } = target
