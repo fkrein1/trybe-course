@@ -14,17 +14,17 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [x] Bloco 04: Introdução à JavaScript e Lógica de Programação
 - [x] Bloco 05: JavaScript: DOM, Eventos e Web Storage
 - [x] Bloco 06: HTML e CSS: Forms, Flexbox e Responsivo
-- [ ] Bloco 07: Introdução à JavaScript ES6 e Testes Unitários
-- [ ] Bloco 08: Higher Order Functions do JavaScript ES6
-- [ ] Bloco 09: JavaScript e Testes Assíncronos
+- [x] Bloco 07: Introdução à JavaScript ES6 e Testes Unitários
+- [x] Bloco 08: Higher Order Functions do JavaScript ES6
+- [x] Bloco 09: JavaScript e Testes Assíncronos
 
 ## Desenvolvimento Front-end
 
-- [ ] Bloco 10: Introdução à React
-- [ ] Bloco 11: Componentes com Estado, Eventos e Formulários com React
-- [ ] Bloco 12: Ciclo de Vida de Componentes e React Router
-- [ ] Bloco 13: Metodologias Ágeis
-- [ ] Bloco 14: Testes automatizados com React Testing Library
+- [x] Bloco 10: Introdução à React
+- [x] Bloco 11: Componentes com Estado, Eventos e Formulários com React
+- [x] Bloco 12: Ciclo de Vida de Componentes e React Router
+- [x] Bloco 13: Metodologias Ágeis
+- [x] Bloco 14: Testes automatizados com React Testing Library
 - [ ] Bloco 15: Gerenciamento de estado com Redux
 - [ ] Bloco 16: Projeto Jogo de Trivia
 - [ ] Bloco 17: Context API e React Hooks
