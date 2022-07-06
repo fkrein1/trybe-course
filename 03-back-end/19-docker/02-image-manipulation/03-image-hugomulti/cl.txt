@@ -1,0 +1,4 @@
+
+docker build -t duas-etapas .
+
+docker run -d -p 4321:80 duas-etapas
