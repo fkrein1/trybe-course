@@ -1,0 +1,9 @@
+docker run --name trybe-mysql -p 3306:3306 --platform linux/x86_64 -e MYSQL_ROOT_PASSWORD=password -d mysql:5.7
+
+docker container start trybe_mysql
+docker container stop trybe_mysql
+
+docker exec -it trybe_mysql bash
+mysql -u root -p
+show databases;
+
