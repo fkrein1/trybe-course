@@ -2,10 +2,6 @@
 
 Este repositório contém todas as atividades de aprendizagem desenvolvidas por _[Felipe Krein Rocha](https://www.linkedin.com/in/felipe-krein-rocha/)_ enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:
 
-_"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia."_
-
-O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
-
 ## Fundamentos do Desenvolvimento Web
 
 - [x] Bloco 01: Introdução - Unix & Shell
@@ -28,12 +24,12 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [x] Bloco 15: Gerenciamento de estado com Redux
 - [x] Bloco 16: Projeto Jogo de Trivia
 - [x] Bloco 17: Context API e React Hooks
-- [ ] Bloco 18: Projeto App de Receitas
+- [x] Bloco 18: Projeto App de Receitas
 
 ## Desenvolvimento Back-end
 
-- [ ] Bloco 19: Docker: Utilizando Containers
-- [ ] Bloco 20: Introdução à SQL
+- [x] Bloco 19: Docker: Utilizando Containers
+- [x] Bloco 20: Introdução à SQL
 - [ ] Bloco 21: Funções SQL, JOINs e Normalização
 - [ ] Bloco 22: Introdução ao desenvolvimento Web com Node.js
 - [ ] Bloco 23: Node.js: Camada de Serviço e Arquitetura Rest e Restful
