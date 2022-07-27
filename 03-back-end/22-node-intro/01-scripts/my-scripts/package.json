@@ -1,0 +1,22 @@
+{
+  "name": "my-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index",
+    "imc": "node imc",
+    "velocidade": "node velocidade",
+    "sorteio": "node sorteio",
+    "fatorial": "node fatorial",
+    "fibonacci": "node fibonacci"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
