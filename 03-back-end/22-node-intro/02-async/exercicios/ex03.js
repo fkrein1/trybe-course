@@ -12,10 +12,17 @@ function sumAndMultiply(num1, num2, num3) {
   });
 }
 
-function random() {
-  return Math.floor(Math.random() * 100 + 1);
+async function doMath() {
+  const num1 = Math.floor(Math.random() * 10 + 1);
+  const num2 = Math.floor(Math.random() * 10 + 1);
+  const num3 = Math.floor(Math.random() * 10 + 1);
+
+  try {
+    const result = await sumAndMultiply(num1, num2, num3);
+    console.log(result);
+  } catch (err) {
+    console.log(err);
+  }
 }
 
-sumAndMultiply(random(), random(), random())
-  .then((resolve) => console.log(resolve))
-  .catch((error) => console.log(error));
+doMath()
