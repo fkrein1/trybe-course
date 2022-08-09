@@ -1,0 +1,6 @@
+1 - Interface uniforme (Uniform Interface)
+2 - Arquitetura cliente-servidor
+3 - Sem estado (Stateless)
+4 - Cacheable
+5 - Sistema em camadas (Layered System)
+6 - Código sob demanda (Code on Demand)
