@@ -4,10 +4,15 @@ function pong(req, res) {
 }
 
 async function getZip(req, res) {
-  const { cep } = req.params;
-  const { response, status } = await Services.getZip(cep);
-  if (response.error) return res.status(status).json(response);
-  res.status(status).json(response);
+  const { data, message, code } = await Services.getZip(req.params);
+  if (message) return res.status(code).json(message);
+  res.status(code).json(data);
 }
 
-module.exports = { pong, getZip };
+async function addZip(req, res) {
+  const { data, message, code } = await Services.addZip(req.body);
+  if (message) return res.status(code).json(message);
+  res.status(code).json(data);
+}
+
+module.exports = { pong, getZip, addZip };

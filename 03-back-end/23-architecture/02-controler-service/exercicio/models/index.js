@@ -1,11 +1,18 @@
 const connection = require('./connection');
 
-async function getZip(zipCode) {
-  const [cep] = await connection.execute(
+async function getZip({ cep }) {
+  const [zip] = await connection.execute(
     'SELECT cep, logradouro, bairro, localidade, uf FROM ceps WHERE cep = ?',
-    [zipCode],
+    [cep],
   );
-  return cep[0];
+  return zip[0];
 }
 
-module.exports = { getZip };
+async function addZip({ cep, logradouro, bairro, localidade, uf }) {
+  await connection.execute(
+    'INSERT INTO ceps (cep,logradouro,bairro,localidade,uf) VALUES (?,?,?,?,?)',
+    [cep, logradouro, bairro, localidade, uf],
+  );
+}
+
+module.exports = { getZip, addZip };

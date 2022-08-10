@@ -1,19 +1,45 @@
 const Models = require('../models');
+const { schemaFullZip, schemaZip } = require('../schemas');
 
-async function getZip(zipCode) {
-  const zipRegex = /\b\d{8}\b/g;
-  if (!zipRegex.test(zipCode))
+async function getZip({ cep }) {
+  const { error } = schemaZip.validate({ cep });
+  if (error)
     return {
-      response: { error: { code: 'invalidData', message: 'CEP inválido' } },
-      status: 400,
+      message: { error: { code: 'invalidData', message: 'CEP inválido' } },
+      code: 400,
     };
-  const zip = await Models.getZip(zipCode);
+  const zip = await Models.getZip({ cep });
   if (!zip)
     return {
-      response: { error: { code: 'notFound', message: 'CEP não encontrado' } },
-      status: 404,
+      message: { error: { code: 'notFound', message: 'CEP não encontrado' } },
+      code: 404,
     };
-  return { response: zip, status: 200 };
+  return { data: zip, code: 200 };
 }
 
-module.exports = { getZip };
+async function addZip({ cep, logradouro, bairro, localidade, uf }) {
+  const { error } = schemaFullZip.validate({
+    cep,
+    logradouro,
+    bairro,
+    localidade,
+    uf,
+  });
+  if (error)
+    return {
+      message: {
+        error: { code: 'invalidData', message: error.details[0].message },
+      },
+      code: 400,
+    };
+  const zip = await Models.getZip({ cep });
+  if (zip)
+    return {
+      message: { error: { code: 'alreadyExists', message: 'CEP já existente' } },
+      code: 404,
+    };
+  await Models.addZip({ cep, logradouro, bairro, localidade, uf });
+  return { data: { cep, logradouro, bairro, localidade, uf }, code: 200 };
+}
+
+module.exports = { getZip, addZip };
