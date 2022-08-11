@@ -25,4 +25,11 @@ async function create({ title, directedBy, releaseYear }) {
   };
 }
 
-module.exports = { getAll, create };
+async function getById(id) {
+  if (!id || isNaN(id)) return false;
+  const response = await movieModel.getById(id);
+  if (!response) return false;
+  return response;
+}
+
+module.exports = { getAll, create, getById };

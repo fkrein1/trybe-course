@@ -32,6 +32,4 @@ async function getById(id) {
   return result.map(serialize)[0];
 }
 
-getById(4).then(response => console.log(response))
-
 module.exports = { getAll, create, getById };

@@ -5,13 +5,22 @@ async function getAll(req, res) {
   res.status(200).json(movies);
 }
 
-const create = async (req, res) => {
+async function create(req, res) {
   const { title, directedBy, releaseYear } = req.body;
   const movie = await movieService.create({ title, directedBy, releaseYear });
   if (!movie) {
     return res.status(400).send('Dados inválidos');
   }
   res.status(201).send('Filme criado com sucesso!');
-};
+}
 
-module.exports = { getAll, create };
+async function getById(req, res) {
+  const { id } = req.params;
+  const movie = await movieService.getById(id);
+  if (!movie) {
+    return res.status(400).send('Dados inválidos');
+  }
+  res.status(200).json(movie);
+}
+
+module.exports = { getAll, create, getById };
