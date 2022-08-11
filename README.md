@@ -30,9 +30,9 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 
 - [x] Bloco 19: Docker: Utilizando Containers
 - [x] Bloco 20: Introdução à SQL
-- [ ] Bloco 21: Funções SQL, JOINs e Normalização
-- [ ] Bloco 22: Introdução ao desenvolvimento Web com Node.js
-- [ ] Bloco 23: Node.js: Camada de Serviço e Arquitetura Rest e Restful
+- [x] Bloco 21: Funções SQL, JOINs e Normalização
+- [x] Bloco 22: Introdução ao desenvolvimento Web com Node.js
+- [x] Bloco 23: Node.js: Camada de Serviço e Arquitetura Rest e Restful
 - [ ] Bloco 24: Node.js: ORM e Autenticação
 - [ ] Bloco 25: Deployment
 - [ ] Bloco 26: TypeScript
