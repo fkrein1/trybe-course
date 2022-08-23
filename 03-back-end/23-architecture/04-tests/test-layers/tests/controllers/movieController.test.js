@@ -11,6 +11,7 @@ describe('Controller: Ao chamar o controller de create', () => {
 
     before(() => {
       request.body = {};
+      
 
       response.status = sinon.stub().returns(response);
       response.send = sinon.stub().returns();

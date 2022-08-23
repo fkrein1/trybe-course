@@ -22,6 +22,8 @@ describe('Model: Insere um novo filme no BD', () => {
 
   describe('quando é inserido com sucesso', () => {
     it('retorna um objeto', async () => {
+          const execute = [{ insertId: 1 }];
+    sinon.stub(connection, 'execute').resolves(execute);
       const response = await movieModel.create(payloadMovie);
 
       expect(response).to.be.a('object');
