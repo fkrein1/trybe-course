@@ -1,4 +1,4 @@
-import { Email } from "./email";
+import { Email } from "./Email";
 
 export class MailList {
   // Essa sintaxe no construtor é chamada `Parameter Properties`

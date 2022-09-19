@@ -35,7 +35,7 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 - [x] 05: Node.js: Camada de Serviço e Arquitetura Rest e Restful
 - [x] 06: Node.js: ORM e Autenticação
 - [x] 07: Deployment
-- [ ] 08: TypeScript
+- [x] 08: TypeScript
 - [ ] 09: Programação Orientada a Objetos (POO) e SOLID
 - [ ] 10: Projeto - TFC - Trybe Futebol Clube
 - [ ] 11: Introdução ao MongoDB
@@ -46,7 +46,7 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 ## Ciência da Computação
 
 - [ ] 01: Introdução à Python
-- [ ] 02: Programação Orientada a Objetos e Padrões de Projeto
+- [ ] 02: Padrões de Projeto
 - [ ] 03: Redes e Raspagem de Dados
 - [ ] 04: Algoritmos
 - [ ] 05: Estrutura de Dados I: Arrays, Hashmaps e Sets
