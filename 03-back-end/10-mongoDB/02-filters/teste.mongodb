@@ -1,0 +1,39 @@
+use('aula-filter-operators')
+
+db.filmes.find()
+
+db.filmes.find({ano: {$lt: 1989}}, { _id: false, titulo: true, ano: true })
+
+db.filmes.find({ano: {$lte: 2000}}, { _id: false, titulo: true, ano: true }).sort({ano: 1})
+
+db.filmes.find({ano: {$gt: 1978}}, {_id: false, titulo: true, ano: true}).sort({ano: -1})
+
+
+db.filmes.find(
+  {ano: {$gte: 1993, $lte: 2000}},
+  {_id: false, titulo: true, ano: true}
+).sort({ano: 1})
+
+db.filmes.find(
+  {'avaliacao.bom': 7},
+  {_id: false, titulo: true, avaliacao: true}
+)
+
+db.filmes.find(
+  {'avaliacao.ruim': {$ne: 4}},
+  {_id: false, titulo: true, avaliacao: true}
+)
+
+db.filmes.find(
+  {$and: [
+    {ano: { $gt: 2000}},
+    {'avaliacao.bom': { $gte: 8}}
+  ]}
+)
+
+db.filmes.find({
+  $nor: [
+    {diretor: "Michael Bay"},
+    {"avaliacao.ruim": 10}
+  ]
+})
