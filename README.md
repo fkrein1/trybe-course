@@ -36,10 +36,10 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 - [x] 06: Node.js: ORM e Autenticação
 - [x] 07: Deployment
 - [x] 08: TypeScript
-- [ ] 09: Programação Orientada a Objetos (POO) e SOLID
-- [ ] 10: Projeto - TFC - Trybe Futebol Clube
-- [ ] 11: Introdução ao MongoDB
-- [ ] 12: MongoDB: Updates Simples e Complexos
+- [x] 09: Programação Orientada a Objetos (POO) e SOLID
+- [x] 10: Projeto - TFC - Trybe Futebol Clube
+- [x] 11: Introdução ao MongoDB
+- [x] 12: MongoDB: Updates Simples e Complexos
 - [ ] 13: Projeto - App de Delivery
 - [ ] 14: MasterClass - VPS, CI/CD
 

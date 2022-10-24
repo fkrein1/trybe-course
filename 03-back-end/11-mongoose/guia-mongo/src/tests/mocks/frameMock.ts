@@ -1,5 +1,4 @@
 import IFrame from '../../interfaces/IFrame';
-import { IDelete } from '../../interfaces/IModel';
 
 export const frameMock: IFrame = {
   material: 'Ouro',
@@ -27,8 +26,3 @@ export const frameArrayMockWithId: IFrame[] = [
 
 export const correctID = '62cf1fc6498565d94eba52cd';
 export const incorrectID = 'sjdao31231dao';
-
-export const deletedFrame: IDelete = {
-  acknowledged: true,
-  deletedCount: 1,
-};

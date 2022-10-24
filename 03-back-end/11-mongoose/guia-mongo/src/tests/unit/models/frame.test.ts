@@ -4,7 +4,6 @@ import sinon from 'sinon';
 import FrameModel from '../../../models/Frame';
 import {
   correctID,
-  deletedFrame,
   frameArrayMockWithId,
   frameMock,
   frameMockWithId,
@@ -18,7 +17,7 @@ describe('Frame Model', () => {
     sinon.stub(Model, 'create').resolves(frameMockWithId);
     sinon.stub(Model, 'findOne').resolves(frameMockWithId);
     sinon.stub(Model, 'find').resolves(frameArrayMockWithId);
-    sinon.stub(Model, 'deleteOne').resolves(deletedFrame);
+    sinon.stub(Model, 'findByIdAndDelete').resolves(frameMockWithId);
   });
 
   after(() => {
@@ -56,9 +55,8 @@ describe('Frame Model', () => {
 
   describe('delete a frame', () => {
     it('successfully deleted', async () => {
-      const result = await frameModel.destroy(correctID);
-      expect(result.acknowledged).to.be.eq(true);
-      expect(result.deletedCount).to.be.eq(1);
+      const frame = await frameModel.destroy(correctID);
+      expect(frame).to.be.equal(frameMockWithId);
     });
   });
 });
