@@ -19,12 +19,9 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 - [x] 02: Introdução à React
 - [x] 03: Componentes com Estado, Eventos e Formulários com React
 - [x] 04: Ciclo de Vida de Componentes e React Router
-- [x] 05: Metodologias Ágeis
-- [x] 06: Testes automatizados com React Testing Library
-- [x] 07: Gerenciamento de estado com Redux
-- [x] 08: Projeto Jogo de Trivia
-- [x] 09: Context API e React Hooks
-- [x] 10: Projeto App de Receitas
+- [x] 05: Testes automatizados com React Testing Library
+- [x] 06: Gerenciamento de estado com Redux
+- [x] 07: Context API e React Hooks
 
 ## Desenvolvimento Back-end
 
@@ -37,11 +34,9 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 - [x] 07: Deployment
 - [x] 08: TypeScript
 - [x] 09: Programação Orientada a Objetos (POO) e SOLID
-- [x] 10: Projeto - TFC - Trybe Futebol Clube
-- [x] 11: Introdução ao MongoDB
-- [x] 12: MongoDB: Updates Simples e Complexos
-- [ ] 13: Projeto - App de Delivery
-- [ ] 14: MasterClass - VPS, CI/CD
+- [x] 10: Introdução ao MongoDB
+- [x] 11: Moongoose
+
 
 ## Ciência da Computação
 
