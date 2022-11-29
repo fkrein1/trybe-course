@@ -3,9 +3,8 @@ def check_if_word_has_4_or_more_letters(word):
 
 
 def check_what_number_is_greater(first_number, second_number):
-    if first_number > second_number:
-        return first_number
-    return second_number
+    return max(first_number, second_number)
+
 
 
 def check_if_number_is_odd_or_even(number):
@@ -15,4 +14,6 @@ def check_if_number_is_odd_or_even(number):
 
 
 def check_if_element_exists_in_list(element, input_list):
-    return input_list.index(element)
+    if element in input_list:
+        return True 
+    return False

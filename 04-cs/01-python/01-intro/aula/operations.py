@@ -16,3 +16,10 @@ print(counter)
 temperatura = 22
 
 print(18 < temperatura < 25)
+
+price = 24.20
+book_cost = price * 0.6
+quantity = 60
+shipping = 3 + 0.75 * (quantity - 1)
+total_cost = book_cost * 60 + shipping
+print(total_cost)
