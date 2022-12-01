@@ -40,7 +40,7 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 
 ## Ciência da Computação
 
-- [ ] 01: Introdução à Python
+- [x] 01: Introdução à Python
 - [ ] 02: Padrões de Projeto
 - [ ] 03: Redes e Raspagem de Dados
 - [ ] 04: Algoritmos
