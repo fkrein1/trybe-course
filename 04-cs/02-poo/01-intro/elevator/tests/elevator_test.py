@@ -1,4 +1,4 @@
-from elevator_system.elevator import Elevator, ElevatorStatus
+from elevator.elevator import Elevator, ElevatorStatus
 
 
 def test_create_elevator():
