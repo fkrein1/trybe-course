@@ -1,5 +1,6 @@
 from collections.abc import Iterable, Iterator
 
+
 class Carta:
     def __init__(self, valor, naipe):
         self.valor = valor
