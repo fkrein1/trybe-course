@@ -1,0 +1,36 @@
+ curl localhost:3000
+
+ curl -X GET localhost:3000
+
+ curl -X POST \
+     -H 'Content-Type: application/json' \
+     -d '{ "foo": "bar" }' \
+     localhost:3000
+
+curl --request POST \
+    --header 'Content-Type: application/json' \
+    --header 'Authorization: ApiKey EXAMPLE-TOKEN' \
+    --data '{ "foo": "bar" }' \
+    localhost:3000
+
+curl google.com
+
+curl -L google.com
+
+wget betrybe.com
+
+nc -t 127.0.0.1 8085
+
+telnet 127.0.0.1 8085
+
+curl localhost:8085
+
+curl --request POST \
+    --data "{ \"foo\": \"bar\" }" \
+    --header 'Content-Type: application/json' \
+    --header 'Foo-Bar-Header: foo-bar' \
+    localhost:8085/foo-bar
+
+nc -u 127.0.0.1 8084
+
+curl localhost:8084
