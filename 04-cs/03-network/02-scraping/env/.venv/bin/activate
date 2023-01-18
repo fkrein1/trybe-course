@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/fk/trybe-course/04-cs/03-network/02-scraping/request_lib/.venv"
+VIRTUAL_ENV="/Users/fk/trybe-course/04-cs/03-network/02-scraping/env/.venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
