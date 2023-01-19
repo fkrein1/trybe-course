@@ -1,0 +1,5 @@
+docker pull seleniarm/standalone-firefox:105.0
+
+docker run -d --name firefox -p 4444:4444 -p 7900:7900 --shm-size 2g seleniarm/standalone-firefox:105.0
+
+docker restart firefox
