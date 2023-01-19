@@ -42,7 +42,7 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 
 - [x] 01: Introdução à Python
 - [x] 02: Padrões de Projeto
-- [ ] 03: Redes e Raspagem de Dados
+- [X] 03: Redes e Raspagem de Dados
 - [ ] 04: Algoritmos
 - [ ] 05: Estrutura de Dados I: Arrays, Hashmaps e Sets
 - [ ] 06: Estrutura de Dados II: Listas, Filas e Pilhas
