@@ -24,7 +24,7 @@ def partition(numbers, start, end):
     return delimiter + 1
 
 if __name__ == "__main__":
-
+    text = ['d', 'd', 'a', 'c', 'x']
     numbers = [6, 5, 3, 1, 8, 7, 2, 4]
-    quick_sort(numbers, 0, len(numbers) - 1)
-    print(numbers)
+    quick_sort(text, 0, len(text) - 1)
+    print(text)
