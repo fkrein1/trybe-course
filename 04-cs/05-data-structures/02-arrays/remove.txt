@@ -1,0 +1,21 @@
+# Supondo uma lista com 4 caracteres ao qual removeremos um elemento
+
+# Se removermos o último elemento (índice 3), nada precisa ser modificado
+
+         *---*---*---*---*
+array    | a | b | c |   |    posição na memória: 0x01
+         *---*---*---*-⤹-*
+                        d
+
+# Porém se removermos o primeiro, ou qualquer outro índice,
+# todos os valores serão deslocados à esquerda:
+                 ⤺  ⤺  ⤺
+         *---*---*---*---*---*---*---*---*
+array    | a |   | c | d | e |   |   |   |    posição na memória: 0x01
+         *---*-⤹-*---*---*---*---*---*---*
+                b
+
+# À medida que itens são removidos, a estrutura diminui em tamanho:
+         *---*---*---*---*
+array    | a | c | d | e |    posição na memória: 0x01
+         *---*---*---*---*

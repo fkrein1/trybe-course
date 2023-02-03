@@ -1,0 +1,21 @@
+# Supondo uma lista com 4 caracteres ao qual adicionaremos mais um no início:
+            *---*
+novo item   | a |
+            *---*
+              ↓
+            *---*---*---*---*
+original    | b | c | d |   |    posição na memória: 0x01
+            *---*---*---*---*
+                ⤻  ⤻  ⤻
+
+# Os elementos são deslocados para o próximo índice.
+
+            *---*---*---*---*
+original    | a | b | c | d |    posição na memória: 0x01
+            *---*---*---*---*
+
+
+# As regras de crescimento ainda se aplicam portanto pode ser que uma nova lista
+# seja criada, o elemento adicionado e os elementos copiados para a nova lista.
+# Ainda assim, o índice de todos os elementos posteriores a inserção
+# serão acrescidos em 1.
