@@ -1,48 +1,47 @@
 # Trybe
 
-Este repositório contém todas as atividades de aprendizagem desenvolvidas por _[Felipe Krein Rocha](https://www.linkedin.com/in/felipe-krein-rocha/)_ enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:
+This repository contains all the learning activities developed by _[Felipe Krein Rocha](https://www.linkedin.com/in/felipe-krein-rocha/)_ while studying at [Trybe](https://www.betrybe.com/) :rocket:
 
-## Fundamentos do Desenvolvimento Web
+## Web Development Fundamentals
 
-- [x] 01: Introdução - Unix & Shell
-- [x] 02: Git, GitHub e Internet
-- [x] 03: Introdução à HTML e CSS
-- [x] 04: Introdução à JavaScript e Lógica de Programação
-- [x] 05: JavaScript: DOM, Eventos e Web Storage
-- [x] 06: HTML e CSS: Forms, Flexbox e Responsivo
-- [x] 07: Introdução à JavaScript ES6 e Testes Unitários
-- [x] 08: Higher Order Functions do JavaScript ES6
+- [x] 01: Introduction - Unix & Shell
+- [x] 02: Git, GitHub, and the Internet
+- [x] 03: Introduction to HTML and CSS
+- [x] 04: Introduction to JavaScript and Programming Logic
+- [x] 05: JavaScript: DOM, Events, and Web Storage
+- [x] 06: HTML and CSS: Forms, Flexbox, and Responsive
+- [x] 07: Introduction to JavaScript ES6 and Unit Tests
+- [x] 08: Higher Order Functions of JavaScript ES6
 
-## Desenvolvimento Front-end
+## Front-end Development
 
-- [x] 01: JavaScript e Testes Assíncronos
-- [x] 02: Introdução à React
-- [x] 03: Componentes com Estado, Eventos e Formulários com React
-- [x] 04: Ciclo de Vida de Componentes e React Router
-- [x] 05: Testes automatizados com React Testing Library
-- [x] 06: Gerenciamento de estado com Redux
-- [x] 07: Context API e React Hooks
+- [x] 01: JavaScript and Asynchronous Tests
+- [x] 02: Introduction to React
+- [x] 03: Components with State, Events, and Forms in React
+- [x] 04: Component Life Cycle and React Router
+- [x] 05: Automated testing with React Testing Library
+- [x] 06: State Management with Redux
+- [x] 07: Context API and React Hooks
 
-## Desenvolvimento Back-end
+## Back-end Development
 
-- [x] 01: Docker: Utilizando Containers
-- [x] 02: Introdução à SQL
-- [x] 03: Funções SQL, JOINs e Normalização
-- [x] 04: Introdução ao desenvolvimento Web com Node.js
-- [x] 05: Node.js: Camada de Serviço e Arquitetura Rest e Restful
-- [x] 06: Node.js: ORM e Autenticação
+- [x] 01: Docker: Using Containers
+- [x] 02: Introduction to SQL
+- [x] 03: SQL Functions, JOINs, and Normalization
+- [x] 04: Introduction to Web Development with Node.js
+- [x] 05: Node.js: Service Layer and Rest and Restful Architecture
+- [x] 06: Node.js: ORM and Authentication
 - [x] 07: Deployment
 - [x] 08: TypeScript
-- [x] 09: Programação Orientada a Objetos (POO) e SOLID
-- [x] 10: Introdução ao MongoDB
+- [x] 09: Object-Oriented Programming (OOP) and SOLID
+- [x] 10: Introduction to MongoDB
 - [x] 11: Moongoose
 
+## Computer Science
 
-## Ciência da Computação
-
-- [x] 01: Introdução à Python
-- [x] 02: Padrões de Projeto
-- [X] 03: Redes e Raspagem de Dados
-- [ ] 04: Algoritmos
-- [ ] 05: Estrutura de Dados I: Arrays, Hashmaps e Sets
-- [ ] 06: Estrutura de Dados II: Listas, Filas e Pilhas
+- [x] 01: Introduction to Python
+- [x] 02: Design Patterns
+- [X] 03: Networks and Data Scraping
+- [x] 04: Algorithms
+- [x] 05: Data Structure I: Arrays, Hashmaps, and Sets
+- [ ] 06: Data Structure II: Lists, Queues, and Stacks
