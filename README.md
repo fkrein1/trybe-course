@@ -44,4 +44,4 @@ This repository contains all the learning activities developed by _[Felipe Krein
 - [X] 03: Networks and Data Scraping
 - [x] 04: Algorithms
 - [x] 05: Data Structure I: Array, List, Queue and Stack
-- [z] 06: Data Structure II: Hashmap, Set and Dict
+- [x] 06: Data Structure II: Hashmap, Set and Dict
