@@ -45,3 +45,4 @@ This repository contains all the learning activities developed by _[Felipe Krein
 - [x] 04: Algorithms
 - [x] 05: Data Structure I: Array, List, Queue and Stack
 - [x] 06: Data Structure II: Hashmap, Set and Dict
+- [] 07: Data Structure II: Tree and Graph
